@@ -1,0 +1,123 @@
+*{
+    padding : 0;
+    margin: 0;
+}
+.outerDiv{
+    height : 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D2F1E4;
+    background-color: #37584b;
+}
+.mainDiv{
+    background-color: #FBCAEF;
+    height: 600px;
+    width : 400px;
+    border-radius: 20px;
+
+}
+.titleDiv{
+    height: 70px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #F865B0;
+    color: white;
+    text-align: center;
+    font-size: 55px;
+}
+.taskDiv{
+    background-color: rgb(228, 172, 221);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task{
+    height: 40px;
+    width: 230px;
+    margin-left: 10px;
+    /* border-radius: 50px; */
+    border:none;
+    outline: none;
+    background: transparent;
+}
+.taskme{
+    border: none;
+    height: 40px;
+    width: 300;
+    display: flex;
+    border-radius: 50px;
+    background-color: white;
+}
+.taskbtn{
+    height: 40px;
+    width: 65px;
+    border: none;
+    outline:green;
+    background-color: #f646a1;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.taskArea{
+    height: 460px;
+    width:100min;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.taskIn{
+    height: 410px;
+    width: 340px;
+    border-radius: 5px;
+    background-color: #FBCAEF;
+    
+}
+.taskbtn:hover{
+    background-color: rgb(237, 14, 137);
+    font-size: 13px;
+}
+.taskbtn:active{
+    background-color: rgb(232, 56, 177);
+    height: 40px;
+    width: 65px;
+}
+li{
+    font-size: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-left: 10px;
+}
+li::before{
+    position : absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
+.deletbtn{
+    background-color:whitesmoke;
+    text-decoration: none;
+    border: none;
+    width: 45px;
+    height: 20px;
+    color:  rgb(255, 0, 0);
+    border-radius : 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.deletbtn:hover{
+    width: 47px;
+    height: 22px;
+    border: 2px solid rgb(247, 5, 186);
+}
+.deletbtn:active{
+    text-decoration: none;
+}
+li.checked{
+    text-decoration: line-through;
+}
+li.checked::before{
+    text-decoration: solid;
+    color: green;
+}
